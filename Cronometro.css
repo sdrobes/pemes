@@ -1,0 +1,53 @@
+@mixin transition {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    }
+    @mixin corners ($radius) {
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    border-radius: $radius; 
+    -khtml-border-radius: $radius; 
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+    body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    background-color: white;
+    }
+    .wrapper {
+    margin-top: 50px;
+    margin-left: 500px;
+    margin-right: 500px;
+    color:white;
+    text-align:center;
+    }
+    .header {
+    background-color: red;
+    }
+    h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 2.6em;
+    text-transform: uppercase;
+    }
+    #seconds, #tens{
+    font-size:2em;
+    color: black;
+    }
+    .main {
+    padding: 300px;
+    color:white;
+    text-align:center;
+    }
+    button {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: red;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    button:hover {
+        background-color: gray;
+    }
